@@ -4,7 +4,6 @@ namespace Spatie\LaravelPackageTools;
 
 use Illuminate\Support\ServiceProvider;
 use ReflectionClass;
-use Spatie\LaravelPackageTools\Concerns\PackageServiceProvider\ProcessAssets;
 use Spatie\LaravelPackageTools\Concerns\PackageServiceProvider\ProcessBladeComponents;
 use Spatie\LaravelPackageTools\Concerns\PackageServiceProvider\ProcessCommands;
 use Spatie\LaravelPackageTools\Concerns\PackageServiceProvider\ProcessConfigs;
@@ -20,7 +19,6 @@ use Spatie\LaravelPackageTools\Exceptions\InvalidPackage;
 
 abstract class PackageServiceProvider extends ServiceProvider
 {
-    use ProcessAssets;
     use ProcessBladeComponents;
     use ProcessCommands;
     use ProcessConfigs;
