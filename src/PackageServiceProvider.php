@@ -121,4 +121,10 @@ abstract class PackageServiceProvider extends ServiceProvider
             ? $this->package->shortName()
             : $this->package->viewNamespace;
     }
+    
+    public function bootPackageAssets(): static
+    {
+        // Método stub para mantener compatibilidad con paquetes como laravel-health
+        return $this;
+    }
 }
