@@ -1,5 +1,6 @@
 {
     "name": "spatie/laravel-package-tools",
+    "version": "1.92.4",
     "description": "Tools for creating Laravel packages",
     "keywords": [
         "spatie",
