@@ -9,7 +9,6 @@ trait ProcessAssets
         if (! $this->package->hasAssets || ! $this->app->runningInConsole()) {
             return $this;
         }
-
         $vendorAssets = $this->package->basePath('/../resources/dist');
         $appAssets = public_path("vendor/{$this->package->shortName()}");
 
